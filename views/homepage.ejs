@@ -1,0 +1,31 @@
+<%- include("./partials/header") %>
+<head>
+  <link type="text/css" rel="stylesheet" href="/public/css/index0.css">
+</head>
+
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome to Movie Search Engine</h1>
+    <h2>Search Your Movie Title Here.</h2>
+    
+    <form class="form1" action="/result" method="GET">
+      <input class="mt-2" name="movieName" type="text" placeholder="Movie Title">
+      <button class ="mt-2" type="submit" id="login-button">Search</button>
+    </form>
+  </div>
+  
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+<%- include("./partials/footer") %>

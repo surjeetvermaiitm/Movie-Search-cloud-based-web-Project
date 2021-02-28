@@ -1,0 +1,28 @@
+<%- include("./partials/header") %>
+<head>
+    <link type="text/css" rel="stylesheet" href="/public/css/quickview.css">
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-4">
+            <img src=<%= movieData.Poster %>  class="img-fluid" alt="Image Not Found">
+        </div>
+        <div class="col-md-8 mt-4">
+            <table class="table table-striped">
+                <tbody>
+                    <% for(i in movieData){ %>
+                        <% if (i!= "Poster" && i!="Response" && i!="Ratings" && i!="imdbID"){%> 
+                            <tr>
+                                <th class="table-dark" scope="row"><%=i %></th>
+                                <td class="table-light"><%= movieData[i] %> </td>
+                            </tr>
+                        <%}%>
+                       
+                    <%} %>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+<%- include("./partials/footer") %>

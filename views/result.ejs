@@ -1,0 +1,29 @@
+<%- include("./partials/header") %>
+<head>
+    <link type="text/css" rel="stylesheet" href="/public/css/quickview.css">
+</head>
+    <% if(movieData.Response=='False' ){%>
+        <h1>Movie not found!</h1>
+    <%}else{%>
+        <div class="container">
+            <h1>Search Results are: </h1>
+            <div class="row">
+                <% movieData['Search'].forEach(function(movie){%>
+                    <div class="card col-md-4 mt-4 mx-3" style="width: 18rem;">
+                        <img src=<%=movie.Poster %> class="card-img-top" alt="Image Not Found">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%=movie.Title %>
+                            </h5>
+                            <p class="card-text"> Some quick example text to build on the card title and make up the bulk of
+                                the card's content. </p>
+                            <a href="/result/<%= movie.imdbID %> " class="btn btn-primary">Show More Info!</a>
+                        </div>
+                    </div>
+            
+                <% })%>
+        <% } %>
+</div>
+</div>
+
+<%- include("./partials/footer") %>
