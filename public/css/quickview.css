@@ -1,0 +1,77 @@
+/* 
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 200;
+	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+  }
+  @font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 1000;
+	src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+  }
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 1000;
+  }
+  body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-weight: 700;
+  }
+  body ::-webkit-input-placeholder {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-weight: 700;
+  }
+  body :-moz-placeholder {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	opacity: 1;
+	font-weight: 700;
+  }
+  body ::-moz-placeholder {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	opacity: 1;
+	font-weight: 700;
+  }
+  body :-ms-input-placeholder {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-weight: 700;
+  } */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.table{
+    border: 5px solid black;
+}
+.container h1{
+	font-size: 40px;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-put;
+	font-weight: 400;
+	color:black;
+  }
+.card1{
+    left:40%;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
