@@ -11,10 +11,3 @@ http://surjeet-moviesearch.live/
 - used Open Movie Database
 
 # Node.js Structure
-- Routes
-- Views
-- Public Directory
-- app.js
-- node_modules
-- package.json
-- package-lock.json
